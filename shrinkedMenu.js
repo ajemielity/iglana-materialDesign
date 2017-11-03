@@ -10,3 +10,8 @@ window.addEventListener('scroll', function() {
   }
 )
 
+
+/*
+add position fixed to header
+
+*/

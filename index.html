@@ -13,30 +13,32 @@
 </head>
 <body>
   <header id="headerContainer">
-
-    <button class="header__hamburger"></button>
+   <button class="header__hamburger"></button>
     <nav>
       <ul class="header__menu">
-        <li><a href="./subpages/about.html" data-lang="ABOUT US">O NAS</a></li>
-        <li><a href="./subpages/sensory.html" data-lang="SENSORY BOOKS">KSIĄŻECZKI SENSORYCZNE</a></li>
-        <li><a href="./subpages/blankets.html" data-lang="BLANKETS">KOCYKI</a></li>
+        <li><a class="hide-on-start" href="./subpages/about.html" data-lang="ABOUT US">O NAS</a></li>
+        <li><a class="hide-on-start" href="./subpages/sensory.html" data-lang="SENSORY BOOKS">KSIĄŻECZKI SENSORYCZNE</a></li>
+        <li><a class="hide-on-start" href="./subpages/blankets.html" data-lang="BLANKETS">KOCYKI</a></li>
         <li>    <div class="header__logo-container">
           <a href="#home" class="logo">
             <img class="header__logo" src="images/logo.png" alt="Igłana">
           </a>
         </div></li>
-        <li><a href="./subpages/cuddly.html" data-lang="CUDDLY TOYS">PRZYTULANKI</a></li>
-        <li><a href="./subpages/rugs.html" data-lang="RUGS">DYWANIKI</a></li>
-        <li><a href="./subpages/bags.html" data-lang="BAGS">WORKI</a></li>
-        <li><a href="./subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
+        <li><a class="hide-on-start" href="./subpages/cuddly.html" data-lang="CUDDLY TOYS">PRZYTULANKI</a></li>
+        <li><a class="hide-on-start" href="./subpages/rugs.html" data-lang="RUGS">DYWANIKI</a></li>
+        <li><a class="hide-on-start" href="./subpages/bags.html" data-lang="BAGS">WORKI</a></li>
+        <li><a class="hide-on-start" href="./subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
       </ul>
     </nav>
+<!--    <i class="fa fa-chevron-down"></i>-->
   </header>
   <main>
     <!---------- HELLO SECTION ---------->
     <section id="hello" class="hello-container">
       <div class="hello-container__background-inner">
-        <div class="hello-container__background-outer"></div>
+        <div class="hello-container__background-outer">
+          <p>Tworząć z wyobraźnią, rozwijamy wyobraźnię dziecka</p>
+        </div>
       </div>
     </section>
     <!---------- end HELLO SECTION ---------->
@@ -45,8 +47,8 @@
     <section id="mainAbout" class="mainAbout-container">
       <div class="mainAbout__text-container">
         <h2 class="section-title" data-lang="About us">O nas</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis, ligula id ullamcorper interdum, odio augue eleifend felis, in feugiat quam tortor eu nunc. Phasellus in metus vel massa faucibus lacinia. Etiam nulla sapien, luctus in accumsan eu, blandit eget justo. Morbi justo lorem, varius eu elementum sollicitudin, vulputate quis magna.</p>
-        <p>Na Youtoube umieszczamy filmiki przedstawiające nasze produkty. Odwiedź nasz kanał!</p>
+        <p> Nasze produkty wykonane są ze starannością i dbałością o każdy szczegół.
+          Nasz sklep to miejsce, w którym całą swoją pasję poświęcamy, aby stworzyć kreatywny świat dla najmłodszych. Mamy nadzieję, że kreatywność Igłany, pobudzi wyobraźnię w każdym dziecku .</p>
         <a href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a>
       </div>
       <div class="mainAbout__photo-container">
@@ -99,10 +101,6 @@
           <p>kontakt@iglana.pl</p>
         </div>
         <div class="contact__icon-container">
-          <i class="fa fa-phone-square contact__icon"></i>
-          <p data-lang="+48 501 63 8087">501 63 8087</p>
-        </div>
-        <div class="contact__icon-container">
           <a href="https://www.facebook.com/iglana.fanpage/"><i class="fa fa-facebook-square contact__icon"></i></a>
           <a href="https://www.facebook.com/iglana.fanpage/"><p>Igłana</p></a>
         </div>
@@ -127,7 +125,7 @@
     <a class="footer__icon"href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a>
     <a href="./subpages/about.html" data-lang="ABOUT US">O NAS</a>
     <a href="./subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
-    <p class="copyright">Copyright © 2017. All rights reserved. Designed and code by Aleksandra Jemielity.</p>
+    <p class="copyright">Copyright © 2017. All rights reserved. Code by Aleksandra Jemielity.</p>
   </div>
 </footer>
 <!---------- end FOOTER ---------->
