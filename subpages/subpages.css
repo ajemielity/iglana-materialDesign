@@ -1,0 +1,12 @@
+body {
+  min-height: 100vh;
+}
+.product__information {
+  height: auto;
+  margin-top: 35vh;
+}
+
+.img-thumbnail-miniature {
+  max-height: 200px;
+  max-width: auto;
+}

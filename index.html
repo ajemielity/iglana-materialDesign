@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Igłana</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -11,27 +11,51 @@
   <!-- font-awesome icons -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
+
 <body>
-  <header id="headerContainer">
-   <button class="header__hamburger"></button>
+<!--  <header id="headerContainer">
+    <button class="header__hamburger"></button>
     <nav>
       <ul class="header__menu">
         <li><a class="hide-on-start" href="./subpages/about.html" data-lang="ABOUT US">O NAS</a></li>
         <li><a class="hide-on-start" href="./subpages/sensory.html" data-lang="SENSORY BOOKS">KSIĄŻECZKI SENSORYCZNE</a></li>
         <li><a class="hide-on-start" href="./subpages/blankets.html" data-lang="BLANKETS">KOCYKI</a></li>
-        <li>    <div class="header__logo-container">
-          <a href="#home" class="logo">
-            <img class="header__logo" src="images/logo.png" alt="Igłana">
-          </a>
-        </div></li>
+        <li>
+          <div class="header__logo-container">
+            <a href="#home" class="logo">
+              <img class="header__logo" src="images/logo.png" alt="Igłana">
+            </a>
+          </div>
+        </li>
         <li><a class="hide-on-start" href="./subpages/cuddly.html" data-lang="CUDDLY TOYS">PRZYTULANKI</a></li>
         <li><a class="hide-on-start" href="./subpages/rugs.html" data-lang="RUGS">DYWANIKI</a></li>
         <li><a class="hide-on-start" href="./subpages/bags.html" data-lang="BAGS">WORKI</a></li>
         <li><a class="hide-on-start" href="./subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
       </ul>
     </nav>
-<!--    <i class="fa fa-chevron-down"></i>-->
-  </header>
+    &lt;!&ndash;    <i class="fa fa-chevron-down"></i>&ndash;&gt;
+  </header>-->
+
+<header id="headerContainer">
+
+  <button class="header__hamburger"></button>
+  <nav>
+    <ul class="header__menu">
+      <li><a href="./subpages/about.html" data-lang="ABOUT US">O NAS</a></li>
+      <li><a href="./subpages/sensory.html" data-lang="SENSORY BOOKS">KSIĄŻECZKI SENSORYCZNE</a></li>
+      <li><a href="./subpages/blankets.html" data-lang="BLANKETS">KOCYKI</a></li>
+      <li>    <div class="header__logo-container">
+        <a href="#home" class="logo">
+          <img class="header__logo" src="images/logo.png" alt="Igłana">
+        </a>
+      </div></li>
+      <li><a href="./subpages/cuddly.html" data-lang="CUDDLY TOYS">PRZYTULANKI</a></li>
+      <li><a href="./subpages/rugs.html" data-lang="RUGS">DYWANIKI</a></li>
+      <li><a href="./subpages/bags.html" data-lang="BAGS">WORKI</a></li>
+      <li><a href="./subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
+    </ul>
+  </nav>
+</header>
   <main>
     <!---------- HELLO SECTION ---------->
     <section id="hello" class="hello-container">
@@ -45,14 +69,20 @@
 
     <!---------- main-ABOUT SECTION ---------->
     <section id="mainAbout" class="mainAbout-container">
+      <div class="mainAbout__icon-container">
+        <img class="mainAbout__icon" src="images/aboutIconMachine.svg" alt="">
+        <img class="mainAbout__icon" src="images/aboutIconSewing.svg" alt="">
+        <img class="mainAbout__icon" src="images/aboutIconThread.svg" alt="">
+      </div>
       <div class="mainAbout__text-container">
         <h2 class="section-title" data-lang="About us">O nas</h2>
-        <p> Nasze produkty wykonane są ze starannością i dbałością o każdy szczegół.
-          Nasz sklep to miejsce, w którym całą swoją pasję poświęcamy, aby stworzyć kreatywny świat dla najmłodszych. Mamy nadzieję, że kreatywność Igłany, pobudzi wyobraźnię w każdym dziecku .</p>
-        <a href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a>
+        <p>Nasz sklep to miejsce, w którym całą swoją pasję poświęcamy, aby stworzyć kreatywny świat dla najmłodszych. Mamy nadzieję, że kreatywność Igłany, pobudzi wyobraźnię w każdym dziecku .</p>
+        <p>Zapraszamy na kanał na YouToube, na którym prezentujemy nasze produkty.<span><a href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a></span></p>
       </div>
-      <div class="mainAbout__photo-container">
-        <img class="mainAbout__photo" src="images/aboutUs.png"/>
+      <div class="mainAbout__icon-container">
+        <img class="mainAbout__icon" src="images/aboutIconCrochet.svg" alt="">
+        <img class="mainAbout__icon" src="images/aboutIconPin.svg" alt="">
+        <img class="mainAbout__icon" src="images/aboutIconScissors.svg" alt="">
       </div>
     </section>
     <!---------- end main-ABOUT SECTION ---------->
@@ -60,30 +90,25 @@
     <!---------- main-PRODUCTS SECTION ---------->
     <section id="mainProducts" class="mainProducts-container">
       <h2 class="section-title" data-lang="Our products">Nasze produkty</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis, ligula id ullamcorper interdum, odio augue eleifend felis, in feugiat quam tortor eu nunc.</p>
+      <p>Nasze produkty wykonane są ze starannością i dbałością o każdy szczegół.</p>
       <div class="products__row">
         <div class="product">
-          <span class="product__name-container"></span>
-          <p class="product__name" data-lang="Sensory books">Książeczki sensoryczne</p>
+          <button class="product__btn" data-lang="Sensory books">Książeczki sensoryczne</button>>
           <img class="product__image" src="./images/product1.png" alt="Sensory books">
         </div>
         <div class="product">
-          <span class="product__name-container"></span>
           <p class="product__name" data-lang="Blankets">Kocyki</p>
           <img class="product__image" src="./images/product2.png" alt="Blankets">
         </div>
         <div class="product">
-          <span class="product__name-container"></span>
           <p class="product__name" data-lang="Cuddly toys">Przytulanki</p>
           <img class="product__image" src="./images/product3.png" alt="Cuddly toys">
         </div>
         <div class="product">
-          <span class="product__name-container"></span>
           <p class="product__name" data-lang="Rugs">Kocyki</p>
           <img class="product__image" src="./images/product4.png" alt="Rugs">
         </div>
         <div class="product">
-          <span class="product__name-container"></span>
           <p class="product__name" data-lang="Bags">Worki</p>
           <img class="product__image" src="./images/product5.png" alt="Bags">
         </div>
@@ -102,15 +127,19 @@
         </div>
         <div class="contact__icon-container">
           <a href="https://www.facebook.com/iglana.fanpage/"><i class="fa fa-facebook-square contact__icon"></i></a>
-          <a href="https://www.facebook.com/iglana.fanpage/"><p>Igłana</p></a>
+          <a href="https://www.facebook.com/iglana.fanpage/">
+            <p>Igłana</p>
+          </a>
         </div>
       </div>
       <div class="mainContact__form-container">
-        <form class="contact__form">
-          <input id="name" name="firstname" placeholder="Imię" data-lang="Name">
-          <input type="email" id="email" name="mail" placeholder="E-mail">
-          <input type="tel" id="number" name="phonenumber" placeholder="Nr telefonu" data-lang="Phone number">
-          <textarea id="message" name="message" placeholder="Treść wiadomości" data-lang="Message content"></textarea>
+
+        <form class="contact__form" action="https://formspree.io/ola.jemielity@gmail.com" method="POST">
+          <input id="name" type="text" name="name" placeholder="Imię" data-lang="Name" required>
+          <input id="email" type="email" name="email" placeholder="E-mail" required>
+          <input type="tel" id="number" name="phonenumber" placeholder="Nr telefonu" data-lang="Phone number" required>
+          <input type="hidden" name="_subject" value="Kontakt przez www" />
+          <textarea id="message" name="message" placeholder="Treść wiadomości" data-lang="Message content" required></textarea>
           <input type="submit" value="Wyślij" data-lang="Send">
         </form>
       </div>
@@ -118,18 +147,19 @@
     <!---------- end main-CONTACT SECTION ---------->
   </main>
   <!---------- FOOTER ---------->
-<footer>
-  <div class="in-footer__container">
-    <p>IGŁANA</p>
-    <a href="./subpages/about.html" data-lang="ABOUT US">O NAS</a>
-    <a href="./subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
-    <a class="footer__icon"href="https://www.facebook.com/iglana.fanpage/"><i class="fa fa-facebook-square"></i></a>
-    <a class="footer__icon"href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a>
-    <p class="copyright">Copyright © 2017. All rights reserved. Code by Aleksandra Jemielity.</p>
-  </div>
-</footer>
-<!---------- end FOOTER ---------->
-<!--<script src="shrinkedMenu.js"></script>-->
-<script src="shrinkedMenu.js"></script>
+  <footer>
+    <div class="in-footer__container">
+      <p>IGŁANA</p>
+      <a href="./subpages/about.html" data-lang="ABOUT US">O NAS</a>
+      <a href="./subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
+      <a class="footer__icon" href="https://www.facebook.com/iglana.fanpage/"><i class="fa fa-facebook-square"></i></a>
+      <a class="footer__icon" href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a>
+      <p class="copyright">Copyright © 2017. All rights reserved. Code by Aleksandra Jemielity.</p>
+    </div>
+  </footer>
+  <!---------- end FOOTER ---------->
+  <!--<script src="shrinkedMenu.js"></script>-->
+  <script src="shrinkedMenu.js"></script>
 </body>
+
 </html>

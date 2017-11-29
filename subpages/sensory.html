@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Igłana</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="Stylesheet" href="../style.css" type="text/css">
+  <link rel="Stylesheet" href="./subpages.css" type="text/css">
+  <!-- font-awesome icons -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!--Latest stable release of jQuery Core Library-->
+  <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+
+  <!--Bootstrap JS-->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  </script>
+</head>
+
+<body>
+<header id="headerContainer">
+
+  <button class="header__hamburger"></button>
+  <nav>
+    <ul class="header__menu">
+      <li><a href="../subpages/about.html" data-lang="ABOUT US">O NAS</a></li>
+      <li><a href="../subpages/sensory.html" data-lang="SENSORY BOOKS">KSIĄŻECZKI SENSORYCZNE</a></li>
+      <li><a href="../subpages/blankets.html" data-lang="BLANKETS">KOCYKI</a></li>
+      <li>    <div class="header__logo-container">
+        <a href="../index.html" class="logo">
+          <img class="header__logo" src="images/logo.png" alt="Igłana">
+        </a>
+      </div></li>
+      <li><a href="../subpages/cuddly.html" data-lang="CUDDLY TOYS">PRZYTULANKI</a></li>
+      <li><a href="../subpages/rugs.html" data-lang="RUGS">DYWANIKI</a></li>
+      <li><a href="../subpages/bags.html" data-lang="BAGS">WORKI</a></li>
+      <li><a href="../subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="product__information">
+    <h1>Sensory books</h1>
+  </section>
+  <div class="product__gallery">
+    <ul class="list-inline">
+      <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="0"><img class="img-thumbnail-miniature" src="sensory-images/sensory1.jpg"><br>
+        Jakiś tam opis</a></li>
+      <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="1"><img class="img-thumbnail-miniature" src="sensory-images/sensory2.jpg"><br>
+        Jakiś tam opis</a></li>
+      <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="2"><img class="img-thumbnail-miniature" src="sensory-images/sensory3.jpg"><br>
+        Jakiś tam opis</a></li>
+      <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="3"><img class="img-thumbnail-miniature" src="sensory-images/sensory4.jpg"><br>
+        Jakiś tam opis</a></li>
+      <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="4"><img class="img-thumbnail-miniature" src="sensory-images/sensory5.jpg"><br>
+        Jakiś tam opis</a></li>
+      <li data-toggle="modal" data-target="#myModal"><a href="#myGallery" data-slide-to="5"><img class="img-thumbnail-miniature" src="https://placeimg.com/200/133/nature/6"><br>
+        Jakiś tam opis</a></li>
+      <!--end of thumbnails-->
+    </ul>
+
+    <!--begin modal window-->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="pull-left" data-lang="Sensory books">Książeczki sensryczne</div>
+            <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+          </div>
+          <div class="modal-body">
+
+            <!--CAROUSEL CODE GOES HERE-->
+            <!--begin carousel-->
+            <div id="myGallery" class="carousel slide" data-interval="false">
+              <div class="carousel-inner">
+                <div class="item active"> <img src="sensory-images/sensory1.jpg" alt="item0">
+                  <div class="carousel-caption">
+                    <h3>Heading 3</h3>
+                    <p>Slide 0  description.</p>
+                  </div>
+                </div>
+                <div class="item"> <img src="sensory-images/sensory2.jpg" alt="item1">
+                  <div class="carousel-caption">
+                    <h3>Heading 3</h3>
+                    <p>Slide 1 description.</p>
+                  </div>
+                </div>
+                <div class="item"> <img src="sensory-images/sensory3.jpg" alt="item2">
+                  <div class="carousel-caption">
+                    <h3>Heading 3</h3>
+                    <p>Slide 2  description.</p>
+                  </div>
+                </div>
+                <div class="item"> <img src="sensory-images/sensory4.jpg" alt="item3">
+                  <div class="carousel-caption">
+                    <h3>Heading 3</h3>
+                    <p>Slide 3 description.</p>
+                  </div>
+                </div>
+                <div class="item"> <img src="sensory-images/sensory5.jpg" alt="item4">
+                  <div class="carousel-caption">
+                    <h3>Heading 3</h3>
+                    <p>Slide 4 description.</p>
+                  </div>
+                </div>
+                <div class="item"> <img src="https://placeimg.com/600/400/nature/6" alt="item5">
+                  <div class="carousel-caption">
+                    <h3>Heading 3</h3>
+                    <p>Slide 5 description.</p>
+                  </div>
+                </div>
+                <!--end carousel-inner--></div>
+              <!--Begin Previous and Next buttons-->
+              <a class="left carousel-control" href="#myGallery" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#myGallery" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+              <!--end carousel--></div>
+
+            <!--end modal-body--></div>
+          <div class="modal-footer">
+            <div class="pull-left">
+              <p>tu może byś jakiś tekst</p>
+            </div>
+            <button class="btn-sm close" type="button" data-dismiss="modal">jakiś przycisk?</button>
+            <!--end modal-footer--></div>
+          <!--end modal-content--></div>
+        <!--end modal-dialoge--></div>
+      <!--end myModal-->></div>
+
+
+  </div>
+</main>
+
+<!---------- FOOTER ---------->
+<footer>
+  <div class="in-footer__container">
+    <p>IGŁANA</p>
+    <a href="./subpages/about.html" data-lang="ABOUT US">O NAS</a>
+    <a href="./subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
+    <a class="footer__icon" href="https://www.facebook.com/iglana.fanpage/"><i class="fa fa-facebook-square"></i></a>
+    <a class="footer__icon" href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a>
+    <p class="copyright">Copyright © 2017. All rights reserved. Code by Aleksandra Jemielity.</p>
+  </div>
+</footer>
+<!---------- end FOOTER ---------->
+
+<script src="../shrinkedMenu.js"></script>
+</body>
+
+</html>
