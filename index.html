@@ -3,70 +3,138 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Igłana</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="Stylesheet" href="style.css" type="text/css">
+
+  <!-- font for hello-section -->
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+
   <!-- font-awesome icons -->
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!--Latest stable release of jQuery Core Library-->
+  <script src="https://code.jquery.com/jquery-1.12.2.min.js"
+          integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+
+  <!--Bootstrap JS-->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+  </script>
 </head>
 
 <body>
-<!--  <header id="headerContainer">
-    <button class="header__hamburger"></button>
-    <nav>
-      <ul class="header__menu">
-        <li><a class="hide-on-start" href="./subpages/about.html" data-lang="ABOUT US">O NAS</a></li>
-        <li><a class="hide-on-start" href="./subpages/sensory.html" data-lang="SENSORY BOOKS">KSIĄŻECZKI SENSORYCZNE</a></li>
-        <li><a class="hide-on-start" href="./subpages/blankets.html" data-lang="BLANKETS">KOCYKI</a></li>
-        <li>
-          <div class="header__logo-container">
-            <a href="#home" class="logo">
-              <img class="header__logo" src="images/logo.png" alt="Igłana">
-            </a>
-          </div>
-        </li>
-        <li><a class="hide-on-start" href="./subpages/cuddly.html" data-lang="CUDDLY TOYS">PRZYTULANKI</a></li>
-        <li><a class="hide-on-start" href="./subpages/rugs.html" data-lang="RUGS">DYWANIKI</a></li>
-        <li><a class="hide-on-start" href="./subpages/bags.html" data-lang="BAGS">WORKI</a></li>
-        <li><a class="hide-on-start" href="./subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
-      </ul>
-    </nav>
-    &lt;!&ndash;    <i class="fa fa-chevron-down"></i>&ndash;&gt;
-  </header>-->
 
 <header id="headerContainer">
 
-  <button class="header__hamburger"></button>
-  <nav>
-    <ul class="header__menu">
-      <li><a href="./subpages/about.html" data-lang="ABOUT US">O NAS</a></li>
-      <li><a href="./subpages/sensory.html" data-lang="SENSORY BOOKS">KSIĄŻECZKI SENSORYCZNE</a></li>
-      <li><a href="./subpages/blankets.html" data-lang="BLANKETS">KOCYKI</a></li>
-      <li>    <div class="header__logo-container">
-        <a href="#home" class="logo">
-          <img class="header__logo" src="images/logo.png" alt="Igłana">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#">
+          <!--          <div class="navbar-brand header__logo-container" >
+                      <img class="header__logo" src="images/logo.png" alt="Igłana">
+                    </div>-->
+          <img class="header__logo small" src="images/logo.png" alt="Igłana">
         </a>
-      </div></li>
-      <li><a href="./subpages/cuddly.html" data-lang="CUDDLY TOYS">PRZYTULANKI</a></li>
-      <li><a href="./subpages/rugs.html" data-lang="RUGS">DYWANIKI</a></li>
-      <li><a href="./subpages/bags.html" data-lang="BAGS">WORKI</a></li>
-      <li><a href="./subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
-    </ul>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="./subpages/about.html" data-lang="About us">O nas</a></li>
+          <li><a href="./subpages/sensory.html" data-lang="Sensory books">Książeczki sensoryczne</a></li>
+          <li><a href="./subpages/blankets.html" data-lang="Blankets">Kocyki</a></li>
+          <li>
+            <div class="header__logo-container">
+              <a href="#home" class="logo">
+                <img class="header__logo" src="images/logo.png" alt="Igłana">
+              </a>
+            </div>
+          </li>
+          <li><a href="./subpages/cuddly.html" data-lang="Cuddly toys">Przytulanki</a></li>
+          <li><a href="./subpages/rugs.html" data-lang="Rugs">Dywaniki</a></li>
+          <li><a href="./subpages/bags.html" data-lang="Bags">Worki</a></li>
+          <li><a href="./subpages/contact.html" data-lang="Contact">Kontakt</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
   </nav>
 </header>
-  <main>
+
+<main class="container-fluid">
+  <div class="row hello-row">
     <!---------- HELLO SECTION ---------->
     <section id="hello" class="hello-container">
-      <div class="hello-container__background-inner">
-        <div class="hello-container__background-outer">
-          <p>Tworząć z wyobraźnią, rozwijamy wyobraźnię dziecka</p>
-        </div>
+      <div class="hello-container__hexagon-grid">
+        <p>Tworząc z wyobraźnią, rozwijamy wyobraźnię dziecka!</p>
+        <ul class="grid">
+          <li>
+            <div class="hexagon"></div>
+          </li>
+          <li>
+            <div class="hexagon"></div>
+          </li>
+          <li>
+            <div class="hexagon"></div>
+          </li>
+          <li>
+            <div class="hexagon" style="visibility: hidden;"></div>
+          </li>
+          <li>
+            <div class="hexagon" style="visibility: hidden;"></div>
+          </li>
+          <li>
+            <div class="hexagon"></div>
+          </li>
+          <li>
+            <div class="hexagon"></div>
+          </li>
+          <li>
+            <div class="hexagon" style="visibility: hidden;"></div>
+          </li>
+          <li>
+            <div class="hexagon" style="visibility: hidden;"></div>
+          </li>
+          <li>
+            <div class="hexagon" style="visibility: hidden;"></div>
+          </li>
+          <li>
+            <div class="hexagon"></div>
+          </li>
+          <li>
+            <div class="hexagon"></div>
+          </li>
+          <li>
+            <div class="hexagon"></div>
+          </li>
+          <li>
+            <div class="hexagon"></div>
+          </li>
+          <li>
+            <div class="hexagon"></div>
+          </li>
+        </ul>
       </div>
     </section>
     <!---------- end HELLO SECTION ---------->
+  </div>
 
+  <div class="row mainAbout-row">
     <!---------- main-ABOUT SECTION ---------->
     <section id="mainAbout" class="mainAbout-container">
       <div class="mainAbout__icon-container">
@@ -76,8 +144,10 @@
       </div>
       <div class="mainAbout__text-container">
         <h2 class="section-title" data-lang="About us">O nas</h2>
-        <p>Nasz sklep to miejsce, w którym całą swoją pasję poświęcamy, aby stworzyć kreatywny świat dla najmłodszych. Mamy nadzieję, że kreatywność Igłany, pobudzi wyobraźnię w każdym dziecku .</p>
-        <p>Zapraszamy na kanał na YouToube, na którym prezentujemy nasze produkty.<span><a href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a></span></p>
+        <p>Nasz sklep to miejsce, w którym całą swoją pasję poświęcamy, aby stworzyć kreatywny świat dla najmłodszych.
+          Mamy nadzieję, że kreatywność Igłany, pobudzi wyobraźnię w każdym dziecku .</p>
+        <p>Zapraszamy na kanał na YouToube, na którym prezentujemy nasze produkty.<span><a
+            href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a></span></p>
       </div>
       <div class="mainAbout__icon-container">
         <img class="mainAbout__icon" src="images/aboutIconCrochet.svg" alt="">
@@ -86,14 +156,17 @@
       </div>
     </section>
     <!---------- end main-ABOUT SECTION ---------->
+  </div>
 
+  <div class="row mainProducts-row">
     <!---------- main-PRODUCTS SECTION ---------->
     <section id="mainProducts" class="mainProducts-container">
       <h2 class="section-title" data-lang="Our products">Nasze produkty</h2>
       <p>Nasze produkty wykonane są ze starannością i dbałością o każdy szczegół.</p>
       <div class="products__row">
         <div class="product">
-          <button class="product__btn" data-lang="Sensory books">Książeczki sensoryczne</button>>
+          <button class="product__btn" data-lang="Sensory books">Książeczki sensoryczne</button>
+          >
           <img class="product__image" src="./images/product1.png" alt="Sensory books">
         </div>
         <div class="product">
@@ -115,12 +188,15 @@
       </div>
     </section>
     <!---------- end main-PRODUCTS SECTION ---------->
+  </div>
 
+  <div class="row mainContact-row">
     <!---------- main-CONTACT SECTION ---------->
     <section id="mainContact" class="mainContact-container">
       <div class="mainContact__icons-container">
         <h2 class="section-title" data-lang="Contact with us!">Skontaktuj się z nami!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis, ligula id ullamcorper interdum, odio augue eleifend felis, in feugiat quam tortor eu nunc.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis, ligula id ullamcorper interdum, odio
+          augue eleifend felis, in feugiat quam tortor eu nunc.</p>
         <div class="contact__icon-container">
           <i class="fa fa-envelope contact__icon"></i>
           <p>kontakt@iglana.pl</p>
@@ -138,28 +214,30 @@
           <input id="name" type="text" name="name" placeholder="Imię" data-lang="Name" required>
           <input id="email" type="email" name="email" placeholder="E-mail" required>
           <input type="tel" id="number" name="phonenumber" placeholder="Nr telefonu" data-lang="Phone number" required>
-          <input type="hidden" name="_subject" value="Kontakt przez www" />
-          <textarea id="message" name="message" placeholder="Treść wiadomości" data-lang="Message content" required></textarea>
+          <input type="hidden" name="_subject" value="Kontakt przez www"/>
+          <textarea id="message" name="message" placeholder="Treść wiadomości" data-lang="Message content"
+                    required></textarea>
           <input type="submit" value="Wyślij" data-lang="Send">
         </form>
       </div>
     </section>
     <!---------- end main-CONTACT SECTION ---------->
-  </main>
-  <!---------- FOOTER ---------->
-  <footer>
-    <div class="in-footer__container">
-      <p>IGŁANA</p>
-      <a href="./subpages/about.html" data-lang="ABOUT US">O NAS</a>
-      <a href="./subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
-      <a class="footer__icon" href="https://www.facebook.com/iglana.fanpage/"><i class="fa fa-facebook-square"></i></a>
-      <a class="footer__icon" href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a>
-      <p class="copyright">Copyright © 2017. All rights reserved. Code by Aleksandra Jemielity.</p>
-    </div>
-  </footer>
-  <!---------- end FOOTER ---------->
-  <!--<script src="shrinkedMenu.js"></script>-->
-  <script src="shrinkedMenu.js"></script>
+  </div>
+</main>
+
+<!---------- FOOTER ---------->
+<footer>
+  <div class="in-footer__container">
+    <p>IGŁANA</p>
+    <a href="./subpages/about.html" data-lang="ABOUT US">O NAS</a>
+    <a href="./subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
+    <a class="footer__icon" href="https://www.facebook.com/iglana.fanpage/"><i class="fa fa-facebook-square"></i></a>
+    <a class="footer__icon" href="https://www.youtube.com/"><i class="fa fa-youtube-square"></i></a>
+    <p class="copyright">Copyright © 2017. All rights reserved. Code by Aleksandra Jemielity.</p>
+  </div>
+</footer>
+<!---------- end FOOTER ---------->
+<script src="shrinkedMenu.js"></script>
 </body>
 
 </html>

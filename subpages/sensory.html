@@ -26,22 +26,47 @@
 <body>
 <header id="headerContainer">
 
-  <button class="header__hamburger"></button>
-  <nav>
-    <ul class="header__menu">
-      <li><a href="../subpages/about.html" data-lang="ABOUT US">O NAS</a></li>
-      <li><a href="../subpages/sensory.html" data-lang="SENSORY BOOKS">KSIĄŻECZKI SENSORYCZNE</a></li>
-      <li><a href="../subpages/blankets.html" data-lang="BLANKETS">KOCYKI</a></li>
-      <li>    <div class="header__logo-container">
-        <a href="../index.html" class="logo">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#">
+          <!--          <div class="navbar-brand header__logo-container" >
+                      <img class="header__logo" src="images/logo.png" alt="Igłana">
+                    </div>-->
           <img class="header__logo" src="images/logo.png" alt="Igłana">
         </a>
-      </div></li>
-      <li><a href="../subpages/cuddly.html" data-lang="CUDDLY TOYS">PRZYTULANKI</a></li>
-      <li><a href="../subpages/rugs.html" data-lang="RUGS">DYWANIKI</a></li>
-      <li><a href="../subpages/bags.html" data-lang="BAGS">WORKI</a></li>
-      <li><a href="../subpages/contact.html" data-lang="CONTACT">KONTAKT</a></li>
-    </ul>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+         <!-- <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>-->
+          <li><a href="../subpages/about.html" data-lang="About us">O nas</a></li>
+          <li  class="active"><a href="../subpages/sensory.html" data-lang="Sensory books">Książeczki <span class="sr-only">(current)</span>sensoryczne</a></li>
+          <li><a href="../subpages/blankets.html" data-lang="Blankets">Kocyki</a></li>
+          <li>    <div class="header__logo-container">
+            <a href="#home" class="logo">
+              <img class="header__logo" src="images/logo.png" alt="Igłana">
+            </a>
+          </div></li>
+          <li><a href="../subpages/cuddly.html" data-lang="Cuddly toys">Przytulanki</a></li>
+          <li><a href="../subpages/rugs.html" data-lang="Rugs">Dywaniki</a></li>
+          <li><a href="../subpages/bags.html" data-lang="Bags">Worki</a></li>
+          <li><a href="../subpages/contact.html" data-lang="Contact">Kontakt</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
   </nav>
 </header>
 
